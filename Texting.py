@@ -12,7 +12,7 @@ if __name__ == "__main__":
     ## 4 params(to, from, type, text) are mandatory. must be filled
     params = dict()
     params['type'] = 'sms' # Message type ( sms, lms, mms, ata )
-    params['to'] = '01058998659' # Recipients Number 
+    params['to'] = '01094060235' # Recipients Number 
     params['from'] = '01094060235' # Sender number
     params['text'] = 'Help Me!' # Message
 
