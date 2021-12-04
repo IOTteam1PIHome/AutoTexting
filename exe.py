@@ -1,8 +1,8 @@
 import os
 import paho.mqtt.client as mqtt
 
-topic = "pi/emer/"
-server = "3.90.5.110"
+topic = "pi/emer" 
+server = "34.193.131.206" #EC2 address
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with RC : " + str(rc))
@@ -13,7 +13,7 @@ def on_message(client, userdata, msg):
     Save_message = int(msg.payload)
 
     if(Save_message == 1):
-        os.system("python ./Desktop/autotexting/Texting.py")
+        os.system("python ./Desktop/autotexting/Texting.py") #Texting.py dir 
     
 client =mqtt.Client()
 client.connect(server, 1883, 60)
